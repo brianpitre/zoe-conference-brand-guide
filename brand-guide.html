@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoe Conference — Brand Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=IM+Fell+English:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ==============================================
+       ZOE CONFERENCE — BRAND GUIDE
+       Document framing: The Life Church aesthetic —
+       clean, minimal, modern, photography-forward.
+       Brand content: Zoe illuminated manuscript style.
+    ============================================== */
+
+    :root {
+      /* GUIDE DOCUMENT SYSTEM (Life Church aesthetic) */
+      --doc-bg:         #ffffff;
+      --doc-bg-alt:     #f5f5f5;
+      --doc-text:       #111111;
+      --doc-muted:      #666666;
+      --doc-border:     #e0e0e0;
+
+      /* ZOE CONFERENCE BRAND PALETTE */
+      --zoe-gold:        #C49A22;
+      --zoe-gold-dark:   #9B7A18;
+      --zoe-gold-light:  #D4B44A;
+      --zoe-gold-pale:   #EDD9A3;
+      --zoe-amber:       #B8860B;
+      --zoe-parchment:   #F2E4C4;
+      --zoe-ivory:       #FAF3E0;
+      --zoe-brown-deep:  #2E1800;
+      --zoe-brown-mid:   #6B3E1A;
+      --zoe-brown-light: #A0672A;
+      --zoe-green:       #3D6B35;
+      --zoe-burgundy:    #8B2020;
+      --zoe-blue:        #1E3A6E;
+      --zoe-cream:       #EDD9A3;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--doc-bg);
+      color: var(--doc-text);
+      line-height: 1.65;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ==============================================
+       NAVIGATION — Life Church minimal style
+    ============================================== */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid var(--doc-border);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 2.5rem;
+      gap: 1.25rem;
+    }
+
+    .nav__org {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--doc-muted);
+      white-space: nowrap;
+    }
+
+    .nav__sep {
+      width: 1px;
+      height: 18px;
+      background: var(--doc-border);
+      flex-shrink: 0;
+    }
+
+    .nav__doc {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--doc-text);
+      letter-spacing: 0.05em;
+    }
+
+    .nav__links {
+      margin-left: auto;
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav__links a {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      color: var(--doc-muted);
+      transition: color 0.2s;
+    }
+
+    .nav__links a:hover { color: var(--doc-text); }
+
+    /* ==============================================
+       HERO — Full Zoe brand expression
+    ============================================== */
+    .hero {
+      background: var(--zoe-brown-deep);
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(196,154,34,0.10) 0%, rgba(0,0,0,0.35) 100%);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(196,154,34,0.13) 0%, transparent 38%),
+        radial-gradient(circle at 100% 0%, rgba(196,154,34,0.13) 0%, transparent 38%),
+        radial-gradient(circle at 0% 100%, rgba(196,154,34,0.13) 0%, transparent 38%),
+        radial-gradient(circle at 100% 100%, rgba(196,154,34,0.13) 0%, transparent 38%);
+      pointer-events: none;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 1;
+      max-width: 580px;
+    }
+
+    .hero__eyebrow {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--zoe-gold);
+      margin-bottom: 1.75rem;
+      opacity: 0.85;
+    }
+
+    .hero__ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero__ornament-line {
+      flex: 1;
+      max-width: 80px;
+      height: 1px;
+      background: var(--zoe-gold);
+      opacity: 0.4;
+    }
+
+    .hero__ornament-diamond {
+      width: 5px;
+      height: 5px;
+      background: var(--zoe-gold);
+      transform: rotate(45deg);
+      opacity: 0.7;
+    }
+
+    .hero__title {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(4rem, 10vw, 6.5rem);
+      font-weight: 400;
+      color: var(--zoe-gold);
+      letter-spacing: 0.12em;
+      line-height: 1;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero__subtitle {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(0.58rem, 1.4vw, 0.78rem);
+      font-weight: 400;
+      letter-spacing: 0.55em;
+      text-transform: uppercase;
+      color: var(--zoe-gold-pale);
+      opacity: 0.75;
+      margin-bottom: 2.25rem;
+    }
+
+    .hero__tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--zoe-parchment);
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    .hero__meta {
+      margin-top: 2.5rem;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--zoe-gold-dark);
+      opacity: 0.6;
+    }
+
+    /* ==============================================
+       SECTION SCAFFOLDING
+    ============================================== */
+    .section {
+      padding: 5.5rem 2.5rem;
+    }
+
+    .section--alt {
+      background: var(--doc-bg-alt);
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--doc-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.75rem, 3vw, 2.4rem);
+      font-weight: 600;
+      color: var(--doc-text);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+
+    .section-desc {
+      font-size: 1rem;
+      color: var(--doc-muted);
+      max-width: 540px;
+      line-height: 1.75;
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+    }
+
+    /* ==============================================
+       01 — BRAND OVERVIEW
+    ============================================== */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4.5rem;
+      align-items: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .overview-image {
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.12);
+    }
+
+    .overview-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .overview-copy p {
+      font-size: 1rem;
+      color: var(--doc-muted);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .overview-copy p:last-child { margin-bottom: 0; }
+
+    .brand-values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .brand-value {
+      padding: 1.75rem;
+      border: 1px solid var(--doc-border);
+      border-top: 3px solid var(--zoe-gold);
+      background: #fff;
+    }
+
+    .brand-value__title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--zoe-gold-dark);
+      margin-bottom: 0.6rem;
+    }
+
+    .brand-value__desc {
+      font-size: 0.875rem;
+      color: var(--doc-muted);
+      line-height: 1.65;
+    }
+
+    /* ==============================================
+       02 — COLOR PALETTE
+    ============================================== */
+    .color-group {
+      margin-bottom: 3rem;
+    }
+
+    .color-group__label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--doc-muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--doc-border);
+    }
+
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .color-swatch {
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--doc-border);
+      background: #fff;
+    }
+
+    .color-swatch__block {
+      height: 110px;
+      width: 100%;
+    }
+
+    .color-swatch__info {
+      padding: 1rem 1.1rem;
+    }
+
+    .color-swatch__name {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--doc-text);
+      margin-bottom: 0.18rem;
+    }
+
+    .color-swatch__hex {
+      font-size: 0.72rem;
+      font-family: 'Courier New', monospace;
+      color: var(--doc-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .color-swatch__usage {
+      font-size: 0.72rem;
+      color: var(--doc-muted);
+      line-height: 1.5;
+    }
+
+    /* ==============================================
+       03 — TYPOGRAPHY
+    ============================================== */
+    .type-specimens {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-bottom: 2.5rem;
+    }
+
+    .type-specimen {
+      padding: 2.5rem;
+      background: #fff;
+      border: 1px solid var(--doc-border);
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .type-specimen--alt {
+      background: var(--doc-bg-alt);
+    }
+
+    .type-specimen__label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--doc-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .type-specimen__name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--doc-text);
+      margin-bottom: 0.5rem;
+    }
+
+    .type-specimen__use {
+      font-size: 0.78rem;
+      color: var(--doc-muted);
+      line-height: 1.6;
+    }
+
+    .type-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.18rem 0.55rem;
+      border-radius: 2px;
+      background: var(--doc-bg-alt);
+      color: var(--doc-muted);
+      border: 1px solid var(--doc-border);
+    }
+
+    /* Font specimens */
+    .specimen-cinzel-decorative {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(2.5rem, 5vw, 3.75rem);
+      color: var(--zoe-gold-dark);
+      line-height: 1.1;
+      letter-spacing: 0.08em;
+    }
+
+    .specimen-cinzel-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--doc-muted);
+      margin-top: 0.5rem;
+    }
+
+    .specimen-cinzel-heading {
+      font-family: 'Cinzel', serif;
+      font-size: 2.1rem;
+      font-weight: 500;
+      color: var(--doc-text);
+      letter-spacing: 0.04em;
+    }
+
+    .specimen-cormorant-h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 300;
+      color: var(--doc-text);
+      line-height: 1.25;
+    }
+
+    .specimen-cormorant-italic {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--doc-muted);
+      margin-top: 0.4rem;
+    }
+
+    .specimen-im-fell {
+      font-family: 'IM Fell English', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--doc-muted);
+      line-height: 1.85;
+    }
+
+    .specimen-inter-body {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: var(--doc-muted);
+      line-height: 1.75;
+    }
+
+    .specimen-inter-ui {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--doc-text);
+      margin-top: 0.75rem;
+    }
+
+    /* In-context hierarchy demo */
+    .type-hierarchy {
+      padding: 3.5rem;
+      background: var(--zoe-brown-deep);
+      border-radius: 6px;
+    }
+
+    .th-eyebrow {
+      font-family: 'Cinzel', serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--zoe-gold);
+      opacity: 0.75;
+      margin-bottom: 0.75rem;
+    }
+
+    .th-h1 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 400;
+      color: var(--zoe-gold);
+      letter-spacing: 0.1em;
+      line-height: 1.05;
+      margin-bottom: 0.5rem;
+    }
+
+    .th-h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.55rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--zoe-parchment);
+      opacity: 0.88;
+      margin-bottom: 1.75rem;
+    }
+
+    .th-rule {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .th-rule-line {
+      flex: 1;
+      height: 1px;
+      background: var(--zoe-gold);
+      opacity: 0.25;
+    }
+
+    .th-rule-diamond {
+      font-size: 0.5rem;
+      color: var(--zoe-gold);
+      opacity: 0.5;
+    }
+
+    .th-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      color: var(--zoe-cream);
+      line-height: 1.85;
+      opacity: 0.85;
+      max-width: 520px;
+    }
+
+    .th-caption {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--zoe-gold);
+      opacity: 0.4;
+      margin-top: 2.25rem;
+    }
+
+    /* ==============================================
+       04 — VISUAL LANGUAGE
+    ============================================== */
+    .visual-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .visual-card {
+      padding: 2.25rem 1.75rem;
+      background: #fff;
+      border: 1px solid var(--doc-border);
+      border-radius: 4px;
+    }
+
+    .visual-card__icon {
+      font-size: 1.25rem;
+      color: var(--zoe-gold-dark);
+      margin-bottom: 0.85rem;
+    }
+
+    .visual-card__title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--doc-text);
+      margin-bottom: 0.5rem;
+    }
+
+    .visual-card__desc {
+      font-size: 0.875rem;
+      color: var(--doc-muted);
+      line-height: 1.7;
+    }
+
+    .subsection-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--doc-muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--doc-border);
+    }
+
+    .texture-demo {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .texture-sample {
+      height: 130px;
+      border-radius: 4px;
+      display: flex;
+      align-items: flex-end;
+      padding: 0.75rem;
+    }
+
+    .texture-sample__label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .ornament-showcase {
+      padding: 3rem 2rem;
+      background: var(--zoe-ivory);
+      border: 1px solid #e0d5b8;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .ornament-showcase__label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--doc-muted);
+      margin-bottom: 2rem;
+    }
+
+    .ornament-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .ornament-row__line {
+      flex: 1;
+      max-width: 150px;
+      height: 1px;
+      background: var(--zoe-gold);
+      opacity: 0.35;
+    }
+
+    .ornament-row__center {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.6rem;
+      color: var(--zoe-gold-dark);
+      letter-spacing: 0.1em;
+    }
+
+    /* ==============================================
+       05 — VOICE & TONE
+    ============================================== */
+    .voice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+    }
+
+    .voice-trait {
+      margin-bottom: 2rem;
+    }
+
+    .voice-trait:last-child { margin-bottom: 0; }
+
+    .voice-trait__name {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--zoe-gold-dark);
+      margin-bottom: 0.3rem;
+    }
+
+    .voice-trait__desc {
+      font-size: 0.9rem;
+      color: var(--doc-muted);
+      line-height: 1.7;
+    }
+
+    .copy-examples {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .copy-example {
+      padding: 1.1rem 1.25rem 1.1rem 1rem;
+      border-radius: 3px;
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+    }
+
+    .copy-example--do {
+      background: #f0faf0;
+      border-left: 3px solid #4caf50;
+    }
+
+    .copy-example--dont {
+      background: #fff5f5;
+      border-left: 3px solid #ef5350;
+    }
+
+    .copy-example__indicator {
+      font-size: 0.85rem;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    .copy-example--do .copy-example__indicator { color: #4caf50; }
+    .copy-example--dont .copy-example__indicator { color: #ef5350; }
+
+    .copy-example__text {
+      font-size: 0.9rem;
+      color: var(--doc-text);
+      line-height: 1.6;
+    }
+
+    .copy-example__note {
+      font-size: 0.72rem;
+      color: var(--doc-muted);
+      margin-top: 0.3rem;
+      font-style: italic;
+    }
+
+    .sample-copy {
+      padding: 3rem 3rem 3rem;
+      background: var(--zoe-brown-deep);
+      border-radius: 6px;
+      margin-top: 3rem;
+    }
+
+    .sample-copy__label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--zoe-gold);
+      opacity: 0.65;
+      margin-bottom: 1.1rem;
+    }
+
+    .sample-copy__headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.85rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--zoe-parchment);
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .sample-copy__body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      color: var(--zoe-cream);
+      line-height: 1.85;
+      opacity: 0.85;
+      max-width: 600px;
+    }
+
+    .sample-copy__cta {
+      display: inline-block;
+      margin-top: 1.75rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--zoe-gold);
+      text-decoration: none;
+      padding-bottom: 3px;
+      border-bottom: 1px solid rgba(196,154,34,0.5);
+    }
+
+    /* ==============================================
+       FOOTER
+    ============================================== */
+    .footer {
+      background: #111;
+      color: rgba(255,255,255,0.45);
+      padding: 2.5rem;
+      text-align: center;
+    }
+
+    .footer__brand {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 0.4rem;
+    }
+
+    .footer__meta {
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* ==============================================
+       UTILITIES
+    ============================================== */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--doc-border);
+      margin: 3rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+  ============================================ -->
+  <nav class="nav">
+    <span class="nav__org">The Life Church</span>
+    <div class="nav__sep"></div>
+    <span class="nav__doc">Zoe Conference — Brand Guide</span>
+    <ul class="nav__links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#colors">Colors</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#visual">Visual Language</a></li>
+      <li><a href="#voice">Voice &amp; Tone</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================
+       HERO
+  ============================================ -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">The Life Church &nbsp;·&nbsp; Memphis, Tennessee</p>
+      <div class="hero__ornament">
+        <div class="hero__ornament-line"></div>
+        <div class="hero__ornament-diamond"></div>
+        <div class="hero__ornament-line"></div>
+      </div>
+      <h1 class="hero__title">Zoe</h1>
+      <p class="hero__subtitle">Conference &nbsp;·&nbsp; Brand Guide</p>
+      <p class="hero__tagline">Bringing out the value that God has placed inside each woman.</p>
+      <p class="hero__meta">Internal Reference &amp; Design Specification</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       01 — BRAND OVERVIEW
+  ============================================ -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">01 — Brand Overview</p>
+        <h2 class="section-title">Who We Are</h2>
+        <p class="section-desc">A guide for internal teams and external design contractors building within the Zoe Conference brand identity.</p>
+      </div>
+
+      <div class="overview-grid">
+        <div class="overview-copy">
+          <p>Zoe Conference is a Christian women's conference hosted by The Life Church in Memphis, TN. The name <em>Zoe</em> — drawn from the Greek word for <em>life</em> — reflects the transformative, Spirit-filled experience the conference creates for every attendee.</p>
+          <p>Designed for women in their 20s, Zoe centers on three pillars: powerful communication, authentic worship, and genuine community. The brand should always feel inviting, celebratory, and deeply intentional — rooted in faith while bold enough to capture a modern audience.</p>
+          <p>Visually, the Zoe identity draws from the tradition of <strong>illuminated manuscripts</strong> — the ornate, handcrafted beauty of historic Christian texts. Think antique gold, rich parchment, and the quiet feeling of something both ancient and completely alive.</p>
+        </div>
+        <div class="overview-image">
+          <img src="./Zoe Design Option.png" alt="Zoe Conference design reference — illuminated manuscript style featuring 'In the Beginning' in ornate calligraphy on warm antique gold background" />
+        </div>
+      </div>
+
+      <div class="brand-values">
+        <div class="brand-value">
+          <p class="brand-value__title">Empowering</p>
+          <p class="brand-value__desc">Every design choice should reinforce the intrinsic worth God has placed in every woman. Bold, confident, never timid.</p>
+        </div>
+        <div class="brand-value">
+          <p class="brand-value__title">Celebratory</p>
+          <p class="brand-value__desc">Zoe is a gathering of joy. The brand should feel festive, warm, and full of life — not somber or overly formal.</p>
+        </div>
+        <div class="brand-value">
+          <p class="brand-value__title">Rooted</p>
+          <p class="brand-value__desc">Grounded in Scripture and faith heritage. The illuminated manuscript aesthetic honors that history with modern intention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       02 — COLOR PALETTE
+  ============================================ -->
+  <section class="section section--alt" id="colors">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">02 — Color Palette</p>
+        <h2 class="section-title">Brand Colors</h2>
+        <p class="section-desc">Drawn from the warmth of antique gold, aged parchment, and the jewel tones found in illuminated manuscript illustrations.</p>
+      </div>
+
+      <div class="color-group">
+        <p class="color-group__label">Primary Palette</p>
+        <div class="color-grid">
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#C49A22;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Zoe Gold</p>
+              <p class="color-swatch__hex">#C49A22</p>
+              <p class="color-swatch__usage">Primary brand color. Hero elements, conference name, key decorative accents.</p>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#2E1800;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Deep Brown</p>
+              <p class="color-swatch__hex">#2E1800</p>
+              <p class="color-swatch__usage">Primary dark. Warm alternative to pure black. Hero backgrounds, footers, dramatic panels.</p>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#F2E4C4; border-bottom: 1px solid #ddd;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Parchment</p>
+              <p class="color-swatch__hex">#F2E4C4</p>
+              <p class="color-swatch__usage">Warm off-white. Text on dark backgrounds, light section tones, print materials.</p>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#EDD9A3; border-bottom: 1px solid #ddd;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Aged Cream</p>
+              <p class="color-swatch__hex">#EDD9A3</p>
+              <p class="color-swatch__usage">Secondary light tone. Body text on dark backgrounds, subtle background fills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="color-group">
+        <p class="color-group__label">Gold Scale</p>
+        <div class="color-grid">
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#D4B44A;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Gold Light</p>
+              <p class="color-swatch__hex">#D4B44A</p>
+              <p class="color-swatch__usage">Hover states, highlighted accents, lighter ornamental work on dark backgrounds.</p>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#C49A22;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Gold (Base)</p>
+              <p class="color-swatch__hex">#C49A22</p>
+              <p class="color-swatch__usage">Primary — see above.</p>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#9B7A18;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Gold Dark</p>
+              <p class="color-swatch__hex">#9B7A18</p>
+              <p class="color-swatch__usage">Accessible gold for light backgrounds. Body links, callout text, subheadings on white.</p>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#6B3E1A;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Bronze</p>
+              <p class="color-swatch__hex">#6B3E1A</p>
+              <p class="color-swatch__usage">Mid-tone depth. Supporting decorative elements, transitions between gold and brown.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="color-group">
+        <p class="color-group__label">Illumination Accents — Use Sparingly</p>
+        <div class="color-grid">
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#3D6B35;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Manuscript Green</p>
+              <p class="color-swatch__hex">#3D6B35</p>
+              <p class="color-swatch__usage">Botanical ornament, decorative borders, illustrated initial elements only.</p>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#8B2020;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Medallion Red</p>
+              <p class="color-swatch__hex">#8B2020</p>
+              <p class="color-swatch__usage">Floral accents and decorative highlights within illustration-style elements only.</p>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-swatch__block" style="background:#1E3A6E;"></div>
+            <div class="color-swatch__info">
+              <p class="color-swatch__name">Scripture Blue</p>
+              <p class="color-swatch__hex">#1E3A6E</p>
+              <p class="color-swatch__usage">Deep accent for illustration contexts. Use only within decorative art elements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       03 — TYPOGRAPHY
+  ============================================ -->
+  <section class="section" id="typography">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">03 — Typography</p>
+        <h2 class="section-title">Type System</h2>
+        <p class="section-desc">Four typefaces form the Zoe typographic system — each serving a distinct role. All are available free via Google Fonts.</p>
+      </div>
+
+      <div class="type-specimens">
+
+        <div class="type-specimen">
+          <div class="type-specimen__meta">
+            <p class="type-specimen__label">Display</p>
+            <p class="type-specimen__name">Cinzel Decorative</p>
+            <p class="type-specimen__use">The conference name mark, hero titles, and event year stamps. Use only at large sizes (48px+). Never in body copy or small labels.</p>
+            <div class="type-tags">
+              <span class="tag">Weight 400 &amp; 700</span>
+              <span class="tag">All Caps</span>
+              <span class="tag">Large Sizes Only</span>
+            </div>
+          </div>
+          <div>
+            <div class="specimen-cinzel-decorative">Zoe</div>
+            <div class="specimen-cinzel-label">Conference &nbsp;·&nbsp; Memphis 2025</div>
+          </div>
+        </div>
+
+        <div class="type-specimen type-specimen--alt">
+          <div class="type-specimen__meta">
+            <p class="type-specimen__label">Section Titles &amp; UI</p>
+            <p class="type-specimen__name">Cinzel</p>
+            <p class="type-specimen__use">Section headings, eyebrows, labels, navigation, and button text. The workhorse uppercase face of the system — elegant but usable at smaller sizes.</p>
+            <div class="type-tags">
+              <span class="tag">Weight 400–700</span>
+              <span class="tag">All Caps</span>
+              <span class="tag">Tracked Out</span>
+            </div>
+          </div>
+          <div>
+            <div class="specimen-cinzel-heading">Women of Purpose</div>
+            <div class="specimen-cinzel-label" style="margin-top:0.75rem;">Register Now &nbsp;·&nbsp; Learn More &nbsp;·&nbsp; Join Us</div>
+          </div>
+        </div>
+
+        <div class="type-specimen">
+          <div class="type-specimen__meta">
+            <p class="type-specimen__label">Primary Headings &amp; Body</p>
+            <p class="type-specimen__name">Cormorant Garamond</p>
+            <p class="type-specimen__use">Page headings (H2–H3), body copy on dark backgrounds, pull quotes, event descriptions. Elegant and historically resonant. Italic preferred for body use.</p>
+            <div class="type-tags">
+              <span class="tag">Weight 300–600</span>
+              <span class="tag">Italic Available</span>
+              <span class="tag">Serif</span>
+            </div>
+          </div>
+          <div>
+            <div class="specimen-cormorant-h1">Every Woman Carries a Story Worth Telling.</div>
+            <div class="specimen-cormorant-italic">"God has placed something extraordinary inside you."</div>
+          </div>
+        </div>
+
+        <div class="type-specimen type-specimen--alt">
+          <div class="type-specimen__meta">
+            <p class="type-specimen__label">Scripture &amp; Pull Quotes</p>
+            <p class="type-specimen__name">IM Fell English</p>
+            <p class="type-specimen__use">Scripture references, featured quotes, ornamental text passages. Has an authentic antique quality that reinforces the manuscript heritage. Use at 16–24px, italic preferred.</p>
+            <div class="type-tags">
+              <span class="tag">Weight 400</span>
+              <span class="tag">Italic</span>
+              <span class="tag">Antique</span>
+            </div>
+          </div>
+          <div>
+            <div class="specimen-im-fell">"I have come that they may have life,<br>and have it to the full."<br>— John 10:10</div>
+          </div>
+        </div>
+
+        <div class="type-specimen">
+          <div class="type-specimen__meta">
+            <p class="type-specimen__label">Digital Body &amp; UI</p>
+            <p class="type-specimen__name">Inter</p>
+            <p class="type-specimen__use">Website body copy, form labels, button text, navigation, captions, and fine print. Ensures legibility at small sizes on screens. Never use for display, headings, or anything the user reads as "Zoe brand."</p>
+            <div class="type-tags">
+              <span class="tag">Weight 300–700</span>
+              <span class="tag">Sans-Serif</span>
+              <span class="tag">Web-Optimized</span>
+            </div>
+          </div>
+          <div>
+            <div class="specimen-inter-body">Join us for an unforgettable weekend of worship, community, and Spirit-led teaching. Zoe is designed for women who are ready to step into more — more purpose, more freedom, more life.</div>
+            <div class="specimen-inter-ui">Register Now →</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- In-context hierarchy demo -->
+      <div class="type-hierarchy">
+        <p class="th-eyebrow">The Life Church &nbsp;·&nbsp; Memphis, TN</p>
+        <p class="th-h1">Zoe</p>
+        <p class="th-h2">Designed to bring out the value God placed in you.</p>
+        <div class="th-rule">
+          <div class="th-rule-line"></div>
+          <span class="th-rule-diamond">◆</span>
+          <div class="th-rule-line"></div>
+        </div>
+        <p class="th-body">Join hundreds of women for a weekend of powerful worship, inspiring teaching, and meaningful connection. Amazing communicators, incredible worship, and lots of fun — you were made for this.</p>
+        <p class="th-caption">Type in context — Cinzel Decorative / Cormorant Garamond / Cinzel / Inter</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       04 — VISUAL LANGUAGE
+  ============================================ -->
+  <section class="section section--alt" id="visual">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">04 — Visual Language</p>
+        <h2 class="section-title">Aesthetic Direction</h2>
+        <p class="section-desc">Zoe's visual identity is rooted in the illuminated manuscript tradition — honoring Christian heritage while feeling intentional, sophisticated, and deeply alive.</p>
+      </div>
+
+      <div class="visual-grid">
+        <div class="visual-card">
+          <div class="visual-card__icon">✦</div>
+          <p class="visual-card__title">Illuminated Manuscript</p>
+          <p class="visual-card__desc">The primary visual reference. Ornate drop caps, decorative borders, gold leaf tones, botanical illustration. This aesthetic connects the modern conference to a centuries-long tradition of the written Word.</p>
+        </div>
+        <div class="visual-card">
+          <div class="visual-card__icon">◈</div>
+          <p class="visual-card__title">Warm &amp; Textured</p>
+          <p class="visual-card__desc">Prefer textured, organic surfaces over flat digital finishes. Parchment, aged paper, subtle grain. Avoid sterile or overly polished aesthetics. The brand should feel handcrafted — made with care and intention.</p>
+        </div>
+        <div class="visual-card">
+          <div class="visual-card__icon">❧</div>
+          <p class="visual-card__title">Ornamental Details</p>
+          <p class="visual-card__desc">Corner flourishes, botanical vine motifs, diamond separators, thin ruled lines, and decorative borders are all on-brand. Use with restraint — each ornamental element should feel considered, never decorative for decoration's sake.</p>
+        </div>
+        <div class="visual-card">
+          <div class="visual-card__icon">▣</div>
+          <p class="visual-card__title">Jewel Tone Accents</p>
+          <p class="visual-card__desc">The Illumination Accent palette — forest green, medallion red, scripture blue — belongs only within illustration-style elements: decorative initials, botanical borders, manuscript-inspired art. Never in UI components.</p>
+        </div>
+        <div class="visual-card">
+          <div class="visual-card__icon">✧</div>
+          <p class="visual-card__title">Photography Direction</p>
+          <p class="visual-card__desc">Warm, golden-hour lighting. Intimate, candid moments of community and worship. Avoid stark, cold, or heavily filtered images. Photos should feel like they belong in the same warm, light-filled world as the brand palette.</p>
+        </div>
+        <div class="visual-card">
+          <div class="visual-card__icon">◇</div>
+          <p class="visual-card__title">Spatial Intention</p>
+          <p class="visual-card__desc">Don't overcrowd. Illuminated manuscripts used generous margins and deliberate white space — honor that in digital and print layouts. Give typography room to breathe. When in doubt, pull back and let the elements speak.</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <p class="subsection-label">Texture &amp; Surface Reference</p>
+      <div class="texture-demo">
+        <div class="texture-sample" style="background: linear-gradient(145deg, #D4B44A 0%, #C49A22 45%, #9B7A18 100%);">
+          <span class="texture-sample__label" style="color:#2E1800;">Gold Leaf</span>
+        </div>
+        <div class="texture-sample" style="background: linear-gradient(145deg, #FAF3E0 0%, #F2E4C4 50%, #E8D49A 100%); border: 1px solid #e0d5b8;">
+          <span class="texture-sample__label" style="color:#6B3E1A;">Parchment</span>
+        </div>
+        <div class="texture-sample" style="background: linear-gradient(145deg, #3A2200 0%, #2E1800 60%, #1A0E00 100%);">
+          <span class="texture-sample__label" style="color:#C49A22;">Dark Vellum</span>
+        </div>
+        <div class="texture-sample" style="background: linear-gradient(145deg, #3D6B35 0%, #2D5028 40%, #1E3A6E 100%);">
+          <span class="texture-sample__label" style="color:#EDD9A3;">Jewel Tones</span>
+        </div>
+      </div>
+
+      <p class="subsection-label">Ornamental System</p>
+      <div class="ornament-showcase">
+        <p class="ornament-showcase__label">Separator &amp; Frame Reference</p>
+        <div class="ornament-row">
+          <div class="ornament-row__line"></div>
+          <span style="color:var(--zoe-gold); opacity:0.5; font-size:0.5rem;">◆</span>
+          <div class="ornament-row__line"></div>
+        </div>
+        <p style="font-family:'Cinzel',serif; font-size:0.65rem; letter-spacing:0.35em; text-transform:uppercase; color:var(--zoe-gold-dark); opacity:0.7; margin-bottom:1.25rem;">The Life Church &nbsp;·&nbsp; Memphis, Tennessee</p>
+        <div class="ornament-row">
+          <div class="ornament-row__line"></div>
+          <div class="ornament-row__center">Zoe</div>
+          <div class="ornament-row__line"></div>
+        </div>
+        <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1rem; color:var(--zoe-brown-mid); margin-top:1rem; opacity:0.8;">Life. Faith. Purpose.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       05 — VOICE & TONE
+  ============================================ -->
+  <section class="section" id="voice">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">05 — Voice &amp; Tone</p>
+        <h2 class="section-title">How We Sound</h2>
+        <p class="section-desc">Zoe copy is warm, empowering, celebratory, and faith-rooted. It speaks directly to women hungry for purpose — never down to them, always alongside them.</p>
+      </div>
+
+      <div class="voice-grid">
+        <div>
+          <div class="voice-trait">
+            <p class="voice-trait__name">Empowering</p>
+            <p class="voice-trait__desc">We speak to the strength God has already placed inside every woman. Copy affirms, never diminishes. Use active voice, strong verbs, and language that calls women into something — not away from something.</p>
+          </div>
+          <div class="voice-trait">
+            <p class="voice-trait__name">Celebratory</p>
+            <p class="voice-trait__desc">Zoe is a party. Enthusiasm is on-brand. "Amazing communicators, incredible worship, and lots of fun" is not marketing hyperbole — it's the standard we write to. Let joy show up in the words.</p>
+          </div>
+          <div class="voice-trait">
+            <p class="voice-trait__name">Faith-Rooted</p>
+            <p class="voice-trait__desc">Scripture and Spirit-language are natural here, not forced. Reference God, worship, and community the way The Life Church does: accessible and alive, never stiff or jargon-heavy.</p>
+          </div>
+          <div class="voice-trait">
+            <p class="voice-trait__name">Direct &amp; Warm</p>
+            <p class="voice-trait__desc">Short, clear sentences. Conversational but not careless. Write the way you'd talk to a friend who's ready to show up — honest, energetic, and genuinely inviting.</p>
+          </div>
+        </div>
+
+        <div class="copy-examples">
+          <div class="copy-example copy-example--do">
+            <span class="copy-example__indicator">✓</span>
+            <div>
+              <p class="copy-example__text">God has placed something extraordinary inside you — and Zoe was built to help you find it.</p>
+              <p class="copy-example__note">Empowering, faith-rooted, direct.</p>
+            </div>
+          </div>
+          <div class="copy-example copy-example--dont">
+            <span class="copy-example__indicator">✗</span>
+            <div>
+              <p class="copy-example__text">This event is for women who want to learn about their faith and attend a conference.</p>
+              <p class="copy-example__note">Flat, passive, no energy or invitation.</p>
+            </div>
+          </div>
+          <div class="copy-example copy-example--do">
+            <span class="copy-example__indicator">✓</span>
+            <div>
+              <p class="copy-example__text">Amazing communicators. Incredible worship. And honestly? A lot of fun.</p>
+              <p class="copy-example__note">Celebratory, punchy, authentic to the brand voice.</p>
+            </div>
+          </div>
+          <div class="copy-example copy-example--dont">
+            <span class="copy-example__indicator">✗</span>
+            <div>
+              <p class="copy-example__text">We will be hosting speakers, a worship service, and activities for attendees.</p>
+              <p class="copy-example__note">Corporate-speak. No warmth, no heart.</p>
+            </div>
+          </div>
+          <div class="copy-example copy-example--do">
+            <span class="copy-example__indicator">✓</span>
+            <div>
+              <p class="copy-example__text">You were made for more. Come find out what more looks like.</p>
+              <p class="copy-example__note">Speaks directly to the reader. Invitational, not transactional.</p>
+            </div>
+          </div>
+          <div class="copy-example copy-example--dont">
+            <span class="copy-example__indicator">✗</span>
+            <div>
+              <p class="copy-example__text">Women who attend will experience spiritual growth and community building opportunities.</p>
+              <p class="copy-example__note">Third-person, passive. Reads like a brochure, not a conversation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sample-copy">
+        <p class="sample-copy__label">Sample Copy — Event Description</p>
+        <p class="sample-copy__headline">You carry more than you know.</p>
+        <p class="sample-copy__body">Zoe Conference is designed to bring out the value that God has placed inside each woman. Join us for a weekend of Spirit-filled worship, powerful teaching, and the kind of community that stays with you long after you leave. Whether you've been walking with God for decades or you're just beginning — there's a place for you here. Come ready for amazing communicators, incredible worship, and lots of fun.</p>
+        <a href="#" class="sample-copy__cta">Register for Zoe →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer class="footer">
+    <p class="footer__brand">The Life Church — Memphis, TN</p>
+    <p class="footer__meta">Zoe Conference Brand Guide &nbsp;·&nbsp; Internal Use &amp; Design Contractors &nbsp;·&nbsp; 2025</p>
+  </footer>
+
+</body>
+</html>
